@@ -10,13 +10,12 @@ function App() {
         <h1>User Authentication</h1>
         <nav style={{ marginBottom: "15px" }}>
           <Link to="/register" style={{ marginRight: "15px" }}>Register</Link>
-          <Link to="/login">Login</Link>
+          <Link to="/">Login</Link>
         </nav>
 
         <Routes>
           <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="*" element={<h2>404 Not Found</h2>} />
+          <Route path="/" element={<Login />} />
         </Routes>
       </div>
     </Router>
