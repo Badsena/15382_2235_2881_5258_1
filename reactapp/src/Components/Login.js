@@ -13,7 +13,8 @@ function Login() {
       const res = await axios.post("https://9000.vs.amypo.com/user/login", form);
       alert(res.data);
     } catch (err) {
-      alert("Login failed");
+      console.log("Login failed",err);
+      
     }
   };
 
