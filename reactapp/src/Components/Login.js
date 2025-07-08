@@ -13,15 +13,14 @@ function Login() {
       const res = await axios.post("https://9000.vs.amypo.com/user/login", form);
       alert(res.data);
     } catch (err) {
-      console.log("Login failed",err);
-      
+      alert("Login failed");
     }
   };
 
   return (
     <div>
       <h2>Login</h2>
-      <input name="email" onChange={handleChange} /><br />
+      <input name="email" placeholder="Em"  onChange={handleChange} /><br />
       <input name="password" type="password" placeholder="Password" onChange={handleChange} /><br />
       <button onClick={handleSubmit}>Login</button>
     </div>
