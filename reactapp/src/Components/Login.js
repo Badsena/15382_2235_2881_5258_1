@@ -22,7 +22,7 @@ function Login() {
       <h2>Login</h2>
       <input name="email" placeholder="Email" onChange={handleChange} /><br />
       <input name="password" type="password" placeholder="Password" onChange={handleChange} /><br />
-      <button onClick={handleSubmit}>Login</button>
+      <button onClick={handleSubmit}>Login</butto
     </div>
   );
 }
