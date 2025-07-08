@@ -20,11 +20,11 @@ function Login() {
   return (
     <div>
       <h2>Login</h2>
-      <input name="email" placeholder="Email" onChange={handleChange} /><br />
+      <input name="email" placeholder="Email"/><br />
       <input name="password" type="password" placeholder="Password" onChange={handleChange} /><br />
-      <button onClick={handleSubmit}>Login</butto
+      <button onClick={handleSubmit}>Login</button>
     </div>
   );
-}
+} 
 
 export default Login;
