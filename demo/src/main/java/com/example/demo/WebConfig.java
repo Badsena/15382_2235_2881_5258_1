@@ -9,10 +9,10 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins("https://3000.vs.amypo.com")  // Make sure only this one origin is allowed
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  // Explicitly list allowed HTTP methods
-                .allowedHeaders("*")  // Allow all headers, can be more restrictive
-                .allowCredentials(true);  // Allow credentials if required (cookies, etc.)
+        registry.addMapping("/user/**")  // Or any other path you're concerned with
+                .allowedOrigins("https://3000.vs.amypo.com")
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedHeaders("*")
+                .allowCredentials(true); 
     }
 }
